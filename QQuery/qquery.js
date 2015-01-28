@@ -13,7 +13,9 @@ var $$ =
 		if(typeof elem == "string"){
 			if(elem[0] == "#"){
 				//将选中的节点放到elemList里面
-				this.elemList.push(domUtil.selectId(elem.substr(1, elem.length)));
+				//this.elemList.push(domUtil.selectId(elem.substr(1, elem.length)));
+				var node = domUtil.selectId(elem.substr(1, elem.length));
+				this.elemList.push(node);
 			}
 		}
 
